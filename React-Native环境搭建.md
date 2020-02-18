@@ -3,11 +3,11 @@ https://github.com/frekele/oracle-java/releases <BR/>
 选择任意windows版本 <BR/>
 jdk-8u212-windows-i586.exe <BR/>
 添加系统变量：<BR/>
-#### 2.1.    JAVA_HOME 
+#### 1.1.    JAVA_HOME 
          C:\Program Files (x86)\Java\jdk1.8.0_212 <BR/>
-#### 2.2.   Path
+#### 1.2.   Path
          %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin <BR/>
-#### 2.3.  CLASSPATH 
+#### 1.3.  CLASSPATH 
          .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar <BR/>
 
 ### 2.安装Android Studio 
