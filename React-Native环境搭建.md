@@ -4,11 +4,11 @@ https://github.com/frekele/oracle-java/releases <BR/>
 jdk-8u212-windows-i586.exe <BR/>
 添加系统变量：<BR/>
 #### 1.1.    JAVA_HOME 
-         C:\Program Files (x86)\Java\jdk1.8.0_212 <BR/>
+         C:\Program Files (x86)\Java\jdk1.8.0_212
 #### 1.2.   Path
-         %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin <BR/>
+         %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin 
 #### 1.3.  CLASSPATH 
-         .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar <BR/>
+         .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
 
 ### 2.安装Android Studio 
 https://reactnative.cn/docs/getting-started/ <BR/>
