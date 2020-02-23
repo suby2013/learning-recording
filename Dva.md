@@ -1,9 +1,9 @@
 ```
-// 学习过程:
-// 1.是什么
-// 2.是用来干嘛的
-// 3.怎么使用
-// 4.为什么，怎么来的，有没有更好的方案(深入)
+学习过程:
+1.是什么
+2.是用来干嘛的
+3.怎么使用
+4.为什么，怎么来的，有没有更好的方案(深入)
 ```
 ### Dva 如何实现数据增删改
 ### 简单计数器
@@ -126,7 +126,7 @@ export default {
  connect 方法具体的作用是将store和组件联系在一起 <br>
  connect([mapStateToProps], [mapDispatchToProps], [mergeProps], [options])(Mycomponent)  <br>
  让组件可以访问redux里面的state,dispatch,并绑定在组件的props上。  <br>
- 引入vuex里面的部分state to props 可以定义函数  <br>
+ 引入Redux里面的部分state to props 可以定义函数  <br>
  ```
  function mapStateToProps(state) {
   //uesr模块的state
