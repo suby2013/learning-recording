@@ -74,7 +74,13 @@ export default {
   },
   // 1.reducer 是一个函数，接受 state 和 action，返回老的或新的 state 。(Action 处理器 )即：(state, action) => state
   // 2.用来处理同步动作,计算出最新的 State
-  // 3.调用方法 yield put ({ type: 'reducersName' });
+  // 3.调用方法 
+      1.yield put ({ type: 'reducersName' }); <BR>
+      2.组件中：  dispatch({      <BR>
+      //  namespace/reduceType   <BR>
+      type: 'products/delete',   <BR>
+      payload: id,  <BR>
+    });  <BR>
   reducers: {
     save(state, { payload: { data: list} }) {
       return { ...state, list};
@@ -82,7 +88,13 @@ export default {
   },
   //1.Action 处理器
   //2.用来处理异步动作
-  // 3.调用方法 yield put ({ type: 'effectsName' }); 
+  // 3.调用方法 
+    1.yield put ({ type: 'effectsName' });  <BR>
+    2.组件中：  dispatch({      <BR>
+      //  namespace/effectsType   <BR>
+      type: 'products/Add',   <BR>
+      payload: id,  <BR>
+    });  <BR>
   effects: {
     // * Generator 函数
     *fetch({ payload: { } }, { call, put }) {
