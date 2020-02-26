@@ -28,8 +28,14 @@ yarn react-native run-android <BR/>
 https://www.blyoo.com/4172.html  <BR/>
 
 ### React native开发的应用如何打包成APK IPA?
+npm install 报错（npm ERR! errno -4048，Error: EPERM: operation not permitted,）  <BR/>
+解决方法:需要删除npmrc文件。<BR/>
+强调：不是nodejs安装目录npm模块下的那个npmrc文件 <BR/>
+而是在C:\Users\{账户}\下的.npmrc文件.. <BR/>
 'react-native' 不是内部或外部命令，也不是可运行的程序或批处理文件。 <BR/>
 npm install -g react-native-cli <BR/>
+报错信息：npm ERR! code EEXIST  <BR/>
+使用 npm install -g react-native-cli --force 重新安装 <BR/>
 react-native log-android  新开窗口  运行命令 接收log <BR/>
 https://blog.csdn.net/niuba123456/category_8956246.html <BR/>
 在模拟器上Ctrl + M 进入开发者菜单 <BR/>
