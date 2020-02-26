@@ -42,4 +42,12 @@ https://blog.csdn.net/niuba123456/category_8956246.html <BR/>
 然后输入http://localhost:8081/debugger-ui/ 就可以看到console输出的内容了。 <BR/>
 https://github.com/jd-smart-fe/shared/issues/3 <BR/>
 在android studio 中的Logcat也可以看到console <BR/>
-
+android studio报错：package android.support.v4.util does not exist  <BR/>
+解决方法: <BR/>
+在react-native项目中 CMD运行  <BR/>
+1.npm install --save-dev jetifier  <BR/>
+2.npx jetify  <BR/>
+3.cd android and gradle clean  <BR/>
+4.点击rebuild project <BR/>
+android studio 运行项目的时候弹出edit configuration <BR/>
+解决方法：File-->project structure-->Properties-->选择其他版本
