@@ -50,4 +50,16 @@ android studio报错：package android.support.v4.util does not exist  <BR/>
 3.cd android and gradle clean  <BR/>
 4.点击rebuild project <BR/>
 android studio 运行项目的时候弹出edit configuration <BR/>
-解决方法：File-->project structure-->Properties-->选择其他版本
+解决方法：File-->project structure-->Properties-->选择其他版本 <BR/>
+https://github.com/coreybutler/nvm-windows/releases <BR/>
+android studio报错：react native Invalid regular expression: /(.*\\__fixtures__\\.*|node_modules <BR/>
+解决方法：安装v12.10.0版本node <BR/>
+1.下载nvm-setup.zip <BR/>
+2.nvm是让你在同一台机器上安装和切换不同版本的node的工具 <BR/> 
+3.nvm ls-remote：列出所有可以安装的node版本号 <BR/>
+4.nvm install v12.10.0：安装指定版本号的node <BR/>
+5.nvm use v12.10.0：切换node的版本，这个是全局的 <BR/>
+6.nvm current：当前node版本 <BR/>
+nvm ls：列出所有已经安装的node版本 <BR/>
+android studio报错：failed to resolve com.android.support:appcompat-v7:23.4.0 
+Show in Project Structure dialog
