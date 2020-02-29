@@ -1,0 +1,28 @@
+### react-navigation
+1.Passing parameters to routes 路由传参 <br>
+当前页面导航到Details页面  <br>
+```navigation.navigate('Details', {
+  itemId: 86,
+  otherParam: 'anything you want here',
+});```
+在Details页面接收上面页面的传参 <br>
+```function DetailsScreen({ route, navigation }) {
+  const { itemId,otherParam } = route.params;
+  return (
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+          <Text>Details Screen</Text>
+          <Text>itemId: {JSON.stringify(itemId)}</Text>
+          <Text>otherParam: {JSON.stringify(otherParam)}</Text>
+        </View>
+  );
+}```
+route.params取出对应参数  <br>
+navigation.setParams 设置对应参数  <br>
+```navigation.setParams({
+ title:'自定义Header'});```
+Initial params初始化route参数 initialParams={{title:'自定义Header' }} <br>
+setOptions 改变标题  <br>
+```<Button
+  title="Update the title"
+  onPress={() => navigation.setOptions({ title: 'Updated!' })}
+/>```
