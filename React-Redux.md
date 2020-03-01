@@ -27,3 +27,25 @@ function createThunkMiddleware(extraArgument) {
   }
 }
 ```
+# connect
+* 作用：<br>
+store和组件联系在一起 <br> 
+* 用法：<br>
+connect方法接受四个参数：常用两个参数 mapStateToProps，mapDispatchToProps，返回处理后的组件<br>
+mapStateToProps可以将对应的state作为prop注入对应的子组件，mapDispatchToProps 把指定的action作为props注入对应的子组件<br>
+```const VisibleTodoList = connect(
+                mapStateToTodoListProps,
+                mapDispatchToTodoListProps
+            )(TodoList);
+```
+# provider
+* 作用：<br> 
+Provider组件作为做上层组件，需要将store作为参数注入组件中，此后在每个子组件中都可以访问到store这个对象<br>
+* 用法：<br>
+```ReactDOM.render(
+     <Provider store={createStore(App)}>
+        <App />
+     </Provider>,
+     document.getElementById('root')
+);
+```
